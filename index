@@ -1,0 +1,26 @@
+#include <iostream>
+
+// Function to calculate the area of a rectangle
+double calculateRectangleArea(double length, double width) {
+    return length * width;
+}
+
+int main() {
+    // Get user input for length
+    std::cout << "Enter the length of the rectangle: ";
+    double length;
+    std::cin >> length;
+
+    // Get user input for width
+    std::cout << "Enter the width of the rectangle: ";
+    double width;
+    std::cin >> width;
+
+    // Calculate the area
+    double area = calculateRectangleArea(length, width);
+
+    // Display the result
+    std::cout << "The area of the rectangle is: " << area << std::endl;
+
+    return 0;
+}
